@@ -14,6 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
 
+        // Trust Render proxy for HTTPS detection
+        $middleware->trustProxies(at: '*');
+
         // Register Role Middleware
         $middleware->alias([
             'role' => CheckRole::class,
