@@ -1,0 +1,26 @@
+EQUIPTRACK - UPDATED PROJECT
+
+Mga nabago:
+- Hiwalay na Dashboard, Equipment Inventory, Add Equipment, Edit Equipment, Analytics, at Settings pages.
+- Iisang shared layout at sidebar para pare-pareho ang navigation at design.
+- Idinagdag ang routes para sa Analytics at Settings.
+- Idinagdag ang hiwalay na Edit Equipment page.
+- Ang Add, Edit, at Delete ay bumabalik na sa Equipment Inventory pagkatapos mag-save.
+- Analytics ay gumagamit ng aktuwal na equipment records at quantities.
+
+PAG-INSTALL SA IYONG PROJECT:
+1. Gumawa muna ng backup ng kasalukuyang equiptrack folder.
+2. I-extract ang equiptrack-updated.zip sa isang temporary folder.
+3. Kopyahin ang mga files/folders mula sa extracted project papunta sa kasalukuyang project, at piliing Replace ang files kapag tinanong.
+4. Huwag palitan ang iyong sariling .env file. Hindi ito kasama sa ZIP.
+5. Huwag burahin ang kasalukuyang MongoDB data.
+6. Sa terminal ng project, patakbuhin:
+   php artisan optimize:clear
+7. Simulan ang Laravel server:
+   php artisan serve
+8. Buksan ang http://127.0.0.1:8000
+
+PAALALA:
+- Hindi kasama ang vendor at .env sa ZIP.
+- Panatilihin ang iyong kasalukuyang MongoDB connection settings sa .env.
+- Ang Settings page sa bersyong ito ay system information page; hindi nito binabago ang database credentials o .env settings.
